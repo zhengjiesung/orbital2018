@@ -61,4 +61,5 @@
 	* Sung Zheng Jie
 
 ## License
+* Apache License 2.0
 
