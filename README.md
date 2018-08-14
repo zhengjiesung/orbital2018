@@ -51,6 +51,9 @@
 * 4th Week of July: Wallet(Account Sharing) 
 * 4th Week of July: News Feed
 
+## Video Link
+* The [video](https://www.youtube.com/watch?v=LO9hXjKrhQw&feature=youtu.be) provides a brief outline of the aforementioned implemented functionalities
+
 ## Acknowledgements
 * The Scrooge Application uses the following open source software:
 	* [Android Studio](https://developer.android.com/studio/) for providing the interface and technology to make the application
