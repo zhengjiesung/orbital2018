@@ -1,4 +1,6 @@
-# orbital2018
+# Scrooge 
+* An expenditure and income tracking application 
+* A school project under the National University of Singapore
 
 # Note this repo requires the use of an Android Studio Interface
 
@@ -50,4 +52,15 @@
 ## Additional Functions Added
 * 4th Week of July: Wallet(Account Sharing) 
 * 4th Week of July: News Feed
+
+## Acknowledgements
+* The Scrooge Application uses the following open source software:
+	* [Android Studio](https://developer.android.com/studio/) for providing the interface and technology to make the application
+	* [Google Firebase](https://firebase.google.com/) for storing users credentials and financial information
+* Main Contributors:
+	* Barnabas Lim
+	* Jeremy Lim
+	* Sung Zheng Jie
+
+## License
 
