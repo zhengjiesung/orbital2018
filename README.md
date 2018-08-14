@@ -2,8 +2,6 @@
 * An expenditure and income tracking application 
 * A school project under the National University of Singapore
 
-# Note this repo requires the use of an Android Studio Interface
-
 ## Android Studio setup
 
 1. Clone the repo
