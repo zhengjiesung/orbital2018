@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Planned Payment"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="#323232"
+                android:layout_marginLeft="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/cardTitle"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+            </android.support.v7.widget.RecyclerView>
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+
+                android:layout_below="@+id/recyclerView"
+                android:src="@drawable/ic_format_list_bulleted_black_24dp"
+                android:tint="#7f7f7f"/>
+            <TextView
+                android:id="@+id/plannedPaymentlistTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerView"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Last 5 record June 2018"
+                android:textAllCaps="false"
+                android:textColor="#7f7f7f" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

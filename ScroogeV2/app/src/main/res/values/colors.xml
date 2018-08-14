@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradStart">#FAFAFA</color>
+    <color name="gradStop">#9E9E9E</color>
+
+    <color name="primaryDark">#424242</color>
+    <color name="graylight">#fafafa</color>
+    <color name="startblue">#E0E0E0</color>
+    <color name="endblue">#757575</color>
+
+    <color name="Green">#00FF00</color>
+    <color name="Red">#FF0000</color>
+    <color name="blue_500">#FF4081</color>
+
+    <color name="food">#66BB6A</color>
+    <color name="shopping">#EF5350</color>
+    <color name="housing">#cc66ff</color>
+    <color name="transport">#42A5F5</color>
+    <color name="vehicle">#C62828</color>
+    <color name="life">#69F0AE</color>
+    <color name="communications">#FFEB3B</color>
+    <color name="financial">#009688</color>
+    <color name="investment">#cc9900</color>
+    <color name="education">#F48FB1</color>
+    <color name="insurance">#006666</color>
+    <color name="transfer">#663300</color>
+    <color name="othersExpenditure">#F57F17</color>
+
+    <color name="salary">#66BB6A</color>
+    <color name="business">#AD1457</color>
+    <color name="loan">#cc66ff</color>
+    <color name="parental">#3366ff</color>
+    <color name="insurancePayout">#FF8F00</color>
+    <color name="transferIn">#795548</color>
+    <color name="othersIncome">#42A5F5</color>
+
+    <!--background-->
+    <!--colorPrimary is used for the Header Color-->
+    <color name="colorPrimary">#9CCC65</color>
+    <color name="colorPrimaryDark">#9CCC65</color>
+    <color name="colorSecondary">#CCE2A1</color>
+    <color name="limeGreen">#F9FBE7</color>
+    <color name="teal">#E0F2F1</color>
+    <color name="colorPrimaryDarker">#4CAF50</color>
+
+    <!--<color name="colorPrimary">#424242</color>-->
+    <!--<color name="colorPrimaryDark">#424242</color>-->
+
+    <color name="mainColor">#01aa71</color>
+    <color name="colorAboveActionBar">#008858</color>
+    <color name="backgroundColor">#ededed</color>
+    <color name="floatingActionButtonColor">#0076fe</color>
+    <color name="buttonColor">#008aa7</color>
+    <color name="coolblue">#2f91fe</color>
+</resources>
+
+

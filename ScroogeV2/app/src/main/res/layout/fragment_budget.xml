@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10sp"
+        android:text="Set a Budget"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:paddingLeft="10sp"
+        android:text="Choose a category"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerCat"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:paddingLeft="10sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerCat"
+        android:layerType="software"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:src="@drawable/dotted" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="131dp"
+        android:paddingLeft="10sp"
+        android:text="State your spending limit for the current month"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/limit"
+        android:layerType="software"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:src="@drawable/dotted" />
+
+    <EditText
+        android:id="@+id/limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="158dp"
+        android:ems="10"
+        android:hint="Spending Limit"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10sp" />
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barGraph"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView3"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/setLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_toEndOf="@+id/spinnerCat"
+        android:paddingRight="10sp"
+        android:text="Set Limit"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/floatingActionButtonColor"/>
+
+    <Button
+        android:id="@+id/viewBudgetMeter"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-71dp"
+        android:layout_toEndOf="@+id/spinnerCat"
+        android:text="view budget meters"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/floatingActionButtonColor"/>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">OrbitalNotes</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="food">#00ff00</string>
+
+    <string name="shopping">#ff0000</string>
+
+    <string name="housing">#cc66ff</string>
+
+    <string name="transport">#3366ff</string>
+
+    <string name="vehicle">#ff0066</string>
+
+    <string name="life">#003300</string>
+
+    <string name="communications">#ffff00</string>
+
+    <string name="financial">#666699</string>
+
+    <string name="investment">#cc9900</string>
+
+    <string name="education">#800000</string>
+
+    <string name="insurance">#006666</string>
+
+    <string name="transfer">#663300</string>
+
+    <string name="othersExpenditure">#33ccff</string>
+
+    <string name="salary">#00ff00</string>
+
+    <string name="business">#ff0000</string>
+
+    <string name="loan">#cc66ff</string>
+
+    <string name="parental">#3366ff</string>
+
+    <string name="insurancePayout">#800000</string>
+
+    <string name="transferIn">#663300</string>
+
+    <string name="othersIncome">#33ccff</string>
+</resources>

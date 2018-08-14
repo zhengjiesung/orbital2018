@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativelayoutForSelectedUser">
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:id="@+id/profile_image_selected"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_circle_background_color="@color/startblue"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/basicgroot" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/cancelbutton"
+        android:backgroundTint="@color/transparent"
+        android:layout_alignBottom="@+id/profile_image_selected"
+        android:layout_alignRight="@+id/profile_image_selected"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchedUserName"
+        android:text="Barnabas"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_image_selected"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchedUserID"
+        android:text="G2811DBJ"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/searchedUserName"/>
+
+
+</RelativeLayout>

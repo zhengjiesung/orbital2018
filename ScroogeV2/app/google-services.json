@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "837818443070",
+    "firebase_url": "https://scroogev2.firebaseio.com",
+    "project_id": "scroogev2",
+    "storage_bucket": "scroogev2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837818443070:android:6680d7660955bc0b",
+        "android_client_info": {
+          "package_name": "com.montethecat.scroogev2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837818443070-vlbgg64krd4ehr15dh161876e1csckbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDezFULTG6wwqD-ur9JzqvdLnXHFCvOX1s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

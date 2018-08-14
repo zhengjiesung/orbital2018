@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/cardTitle"
+            android:text="Expenditure and Income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#323232"
+            android:layout_marginLeft="10dp"
+             />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/pieFames"
+            android:layout_below="@+id/cardTitle">
+            <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            >
+            </com.github.mikephil.charting.charts.PieChart>
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChartIncome"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                >
+            </com.github.mikephil.charting.charts.PieChart>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/monthYearExpenditureIncomeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pieFames"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#7f7f7f" />
+
+        <TextView
+            android:id="@+id/totalView"
+            android:layout_width="80sp"
+            android:layout_height="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/expensePie"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/monthYearExpenditureIncomeFragment"
+            android:text="expense"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/floatingActionButtonColor"/>
+
+        <Button
+            android:id="@+id/incomePie"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/monthYearExpenditureIncomeFragment"
+            android:layout_centerVertical="true"
+            android:text="income"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/floatingActionButtonColor"/>
+
+
+
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

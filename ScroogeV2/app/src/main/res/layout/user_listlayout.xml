@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_image2">
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_circle_background_color="@color/startblue"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/basicgroot" />
+        <ImageView
+            android:id="@+id/tickButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tick"
+            android:backgroundTint="@color/transparent"
+            android:layout_alignBottom="@+id/profile_image"
+            android:layout_alignRight="@+id/profile_image"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativelayoutInUserItem"
+        android:layout_toEndOf="@+id/profile_image2">
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Username"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/creatorTag"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creator"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@drawable/spinner_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/coolblue"
+
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativelayoutInUserItem"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/profile_image2"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+</RelativeLayout>

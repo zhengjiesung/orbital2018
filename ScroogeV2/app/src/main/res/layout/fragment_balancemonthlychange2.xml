@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/balanceAndMontlyChangeTitle"
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="Balance and Monthly Change"
+                android:textAllCaps="false"
+                android:textColor="#323232"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/tableFrame"
+                android:layout_width="342dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/balanceAndMontlyChangeTitle"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp">
+
+                <TableLayout
+                    android:id="@+id/relativelayoutBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_shape2">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cell_shape3"
+                            android:text="Accounts"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cell_shape"
+                            android:textAlignment="center"
+                            android:text="Balance"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cell_shape6"
+                            android:textAlignment="center"
+                            android:text="Monthly Change"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:background="@drawable/cell_shape"
+                            android:text="Cash"
+                            android:textSize="18sp"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:id="@+id/cardBalanceTextView"
+                            android:background="@drawable/cell_shape"
+                            android:text="500"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape">
+
+                            <ImageView
+                                android:id="@+id/cardMChange"
+                                android:layout_width="32dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/up" />
+
+                            <TextView
+                                android:id="@+id/cardChangeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/cardMChange"
+                                android:text="+20"
+                                android:textAlignment="center"
+                                android:textColor="@color/Green"
+                                android:textSize="18dp" />
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:background="@drawable/cell_shape"
+                            android:text="Bank"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:id="@+id/bankBalanceTextView"
+                            android:background="@drawable/cell_shape"
+                            android:text="2000"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape">
+
+                            <ImageView
+                                android:id="@+id/bankMChange"
+                                android:layout_width="32dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/up" />
+
+                            <TextView
+                                android:id="@+id/bankChangeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/bankMChange"
+                                android:text="+20"
+                                android:textAlignment="center"
+                                android:textColor="@color/Green"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:background="@drawable/cell_shape4"
+                            android:text="Credit"
+                            android:textSize="18sp"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:id="@+id/creditBalanceTextView"
+                            android:background="@drawable/cell_shape"
+                            android:text="500"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape5">
+
+                            <ImageView
+                                android:id="@+id/creditMChange"
+                                android:layout_width="32dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/up" />
+
+                            <TextView
+                                android:id="@+id/creditChangeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/creditMChange"
+                                android:text="+20"
+                                android:textAlignment="center"
+                                android:textColor="@color/Green"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+                    </TableRow>
+
+                </TableLayout>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/balanceAndMontlyChangeTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableFrame"
+                android:gravity="center_vertical"
+                android:text="June 2018"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:textColor="#7f7f7f" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
+
+
+<!-- for barcharts
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:id="@+id/barGraph">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+
+            <TextView
+                android:layout_below="@+id/barGraph"
+                android:id="@+id/cardTitle"
+                android:gravity="center_vertical"
+                android:text="Balance and Monthly Change"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
+-->

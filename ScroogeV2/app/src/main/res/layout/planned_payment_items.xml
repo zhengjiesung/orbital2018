@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/plannedPaymentItem1"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/paymentTypeImg"/>
+        <TableLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/paymentTypeImg">
+            <TableRow>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/typePlannedPaymentTextView"
+                        android:text="Phone Bill"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="150dp" />
+                    <TextView
+                        android:id="@+id/paymentModeTextView"
+                        android:layout_below="@+id/typePlannedPaymentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="cash"
+                        android:textSize="10dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+
+                        android:id="@+id/valuePlannedPaymentTextView"
+                        android:text="-SGD 50.00"
+                        android:textSize="20dp"
+                        android:gravity="right"
+                        android:layout_height="wrap_content"
+                        android:layout_width="160dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/valuePlannedPaymentTextView"
+                        android:text="Today"
+                        android:textSize="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>

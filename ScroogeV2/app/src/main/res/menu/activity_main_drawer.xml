@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/wallet"
+            android:title="Wallet"
+            />
+        <item
+            android:id="@+id/createWallet"
+            android:icon="@drawable/ic_add_circle_outline_black_24dp"
+            android:title="Create Wallet" />
+
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/overview"
+            android:icon="@drawable/overview"
+            android:title="Overview" />
+        <item
+            android:id="@+id/transaction"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="Transaction" />
+        <item
+            android:id="@+id/analytics"
+            android:icon="@drawable/graph"
+            android:title="Analytics" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group3">
+
+        <item
+            android:id="@+id/budget"
+            android:icon="@drawable/notes"
+            android:title="Set Budget" />
+
+        <item
+            android:id="@+id/budgetMeterDrawer"
+            android:icon="@drawable/budget"
+            android:title="Budget Meters" />
+
+        <item
+            android:id="@+id/newsfeed"
+            android:icon="@drawable/newsfeed"
+            android:title="News Feed" />
+
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group4">
+
+        <item
+            android:id="@+id/uploadBankStatement"
+            android:icon="@drawable/upload"
+            android:title="Upload Bank Statement" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_menu_lock_open"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe_viewIncome">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart2Income"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <TextView
+                android:id="@+id/totalView1Income"
+                android:layout_width="110sp"
+                android:layout_height="50sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <Spinner
+                android:layout_below="@id/pieChart2Income"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/querySpinnerIncome"></Spinner>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewRecentTransaction2Income"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/querySpinnerIncome"
+                android:layout_marginRight="20dp"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
